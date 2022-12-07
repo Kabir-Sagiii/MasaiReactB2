@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      //React Element
+      let h2Ref = React.createElement("h2", null, "Welcome to React");
+
+      ReactDOM.render(h2Ref, document.getElementById("root"));
+
+      // <h2>Welcome to React  </h2>
+    </script>
+  </body>
+</html>

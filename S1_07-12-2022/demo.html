@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body id="body">
+    <h2>Welcome to HTML</h2>
+    <p>HTML Element</p>
+    <h2>HTML Elements</h2>
+
+    <script>
+      function createH2() {
+        //dom element
+        var h2Ref = document.createElement("h2");
+
+        h2Ref.innerText = "Welcome to JS";
+
+        document.getElementById("body").appendChild(h2Ref);
+      }
+      createH2();
+      createH2();
+    </script>
+  </body>
+</html>
