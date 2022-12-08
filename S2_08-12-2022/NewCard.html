@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+    <title>React Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function CreateNav() {
+        var navStyle = {
+          backgroundColor: "black",
+          padding: "20px",
+          textAlign: "right",
+        };
+
+        var astyle = {
+          color: "white",
+          marginRight: "50px",
+          textDecoration: "none",
+        };
+
+        return (
+          <div style={navStyle}>
+            <a style={astyle} href="">
+              {" "}
+              Home
+            </a>
+            <a style={astyle} href="">
+              {" "}
+              About{" "}
+            </a>
+            <a style={astyle} href="">
+              {" "}
+              Service
+            </a>
+            <a style={astyle} href="">
+              {" "}
+              Help
+            </a>
+          </div>
+        );
+      }
+
+      function CreateCard(props) {
+        var cardStyle = {
+          width: "250px",
+          boxShadow: "0 0 10px black",
+          padding: "20px",
+          textAlign: "center",
+        };
+
+        return (
+          <div style={cardStyle}>
+            <img src={props.img} width="100%" height="200" />
+            <h2> {props.name}</h2>
+            <p>{props.gender} </p>
+          </div>
+        );
+      }
+
+      function App() {
+        var container = (
+          <>
+            <CreateNav />
+
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                marginTop: "50px",
+              }}
+            >
+              <CreateCard
+                img="https://i.pinimg.com/736x/38/93/07/389307d6af5c4be0051b7d3c4f93bf3d.jpg"
+                name="Rajiv"
+                gender="Male"
+              />
+
+              <CreateCard
+                img="https://fordmurraylaw.com/wp-content/uploads/2018/12/Professional-Woman.jpg"
+                name="Sneha"
+                gender="Female"
+              />
+              <CreateCard
+                img="https://www.carvermostardi.com/cmos/wp-content/uploads/2018/05/professional_headshots_tampa_011.jpg"
+                name="Zoya"
+                gender="Female"
+              />
+              <CreateCard
+                img="https://i1.wp.com/www.torontophotographerz.com/wp-content/uploads/2017/06/Business-portrait-17-1.jpg?fit=800%2C1200&ssl=1"
+                name="Rahul"
+                gender="Male"
+              />
+            </div>
+          </>
+        );
+
+        ReactDOM.render(container, document.getElementById("root"));
+      }
+      App();
+    </script>
+  </body>
+</html>

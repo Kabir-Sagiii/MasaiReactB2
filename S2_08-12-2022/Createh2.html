@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>React Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script>
+      var h2Ref = React.createElement(
+        "h2",
+        {
+          id: "h2id",
+          style: {
+            color: "red",
+            border: "2px solid black",
+            padding: "30px",
+          },
+          onClick: function () {
+            alert("h2 is clicked");
+          },
+        },
+        "React h2 Element"
+      );
+
+      ReactDOM.render(h2Ref, document.getElementById("root"));
+    </script>
+  </body>
+</html>
