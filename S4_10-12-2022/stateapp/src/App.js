@@ -3,11 +3,20 @@ import Footer from "./Components/Footer/Footer";
 import Counter from "./Components/Counter/Counter";
 import List from "./Components/List/List";
 import Todo from "./Components/Todo/Todo";
+import Nav from "./Components/State_API/Nav";
+import Profile from "./Components/State_API/Profile";
+
+import A from "./Components/Modules/A";
+import B from "./Components/Modules/B";
 
 function App() {
   return (
     <div>
-      <Counter />
+      <Nav />
+      <A />
+      <B />
+      <Profile />
+      {/* <Counter /> */}
       {/* <List /> */}
       {/* <Todo /> */}
     </div>

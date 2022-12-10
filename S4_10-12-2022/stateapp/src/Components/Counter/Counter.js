@@ -4,20 +4,19 @@ import { useState } from "react";
 function Counter(props) {
   //creating the state variable
   let [state, setState] = useState(0);
-  console.log("Component is Called");
 
-  //   var count = 0;
+  console.log("Counter Comp is Called");
 
   const updateCount = () => {
-    // console.log(count); // 0
-    // count = count + 1;
-    // console.log(count); // 1
-    // setState(state + 2);
-    // setState(state + 3);
-    // setState(state + 1);
+    // console.log(state); // 0   1
+
     setState((prevState) => prevState + 1);
-    setState((prevState) => prevState + 2);
-    setState((prevState) => prevState + 3);
+
+    setState((prevState) => prevState + 1);
+
+    setState((prevState) => prevState + 1);
+
+    // console.log(state); // 1   2
   };
 
   return (
