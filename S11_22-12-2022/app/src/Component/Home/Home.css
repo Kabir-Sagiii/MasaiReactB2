@@ -1,0 +1,32 @@
+.mainContainer {
+  background: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
+    no-repeat center;
+  height: 100vh;
+  background-size: cover;
+}
+.text-primary {
+  color:cornsilk;
+  margin:0px;
+  font-size:32px
+}
+.bt {
+padding:10px 15px;
+margin-top: 10px;
+border: none;
+background-color: lightgreen;
+border-radius: 5px;
+}
+.subContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+}
+.subContainer p {
+  color: white;
+  margin: 10px auto;
+  width: 90%;
+  font-size: 17px;
+}

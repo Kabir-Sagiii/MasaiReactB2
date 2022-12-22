@@ -32,12 +32,13 @@ function Header(props) {
         <Link style={astyle} to="/products">
           Product
         </Link>
-        <Link style={astyle} to={`/counter?gender=${"male"}`}>
+        <Link style={astyle} to="/counter">
           Counter
         </Link>
         <span style={{ marginRight: "30px", color: "green", fontSize: "20px" }}>
           <b> {state.user}</b>
         </span>
+
         {state.isLoggedIn ? (
           <button
             style={{ marginRight: "50px" }}
