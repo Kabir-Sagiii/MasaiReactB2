@@ -22,6 +22,7 @@ function Login(props) {
       state.name === process.env.REACT_APP_USERNAME &&
       state.password === process.env.REACT_APP_PASSWORD
     ) {
+      localStorage.setItem("isLoggedIn", true);
       // alert("Logged In");
       fnLoggedIn({
         isLoggedIn: true,

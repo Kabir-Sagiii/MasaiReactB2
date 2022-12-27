@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "./Component/Header.js";
 import Profile from "./Component/State_API/Profile";
 import Counter from "./Component/Counter/Counter";
@@ -20,6 +20,15 @@ function App() {
     isLoggedIn: false,
     user: "Guest User",
   });
+
+  useEffect(() => {
+    console.log(window.location.href);
+    var data = localStorage.getItem("isLoggedIn");
+    setState({
+      ...state,
+      isLoggedIn: data,
+    });
+  }, []);
 
   const fnLoggedIn = (data) => {
     setState(data);
