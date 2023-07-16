@@ -1,4 +1,5 @@
-What is JS and Purpose of it 
+What is JS and Purpose of it?
+What is Type Coercion in JS?
 What are Data types in JS 
 What is var , let and Const 
 Explain Diff btw number data type and BigInt 
